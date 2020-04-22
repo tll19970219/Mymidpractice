@@ -14,6 +14,6 @@ public class MyReceiver extends BroadcastReceiver {
         // an Intent broadcast.
         //获取广播内容
        String content=intent.getStringExtra("key");
-        Toast.makeText(context,content,Toast.LENGTH_SHORT).show();;
+        Toast.makeText(context,content,Toast.LENGTH_SHORT).show();
     }
 }
