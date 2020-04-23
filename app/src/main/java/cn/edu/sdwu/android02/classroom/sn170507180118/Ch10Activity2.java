@@ -2,6 +2,7 @@ package cn.edu.sdwu.android02.classroom.sn170507180118;
 
 import android.content.Intent;
 import android.net.Uri;
+import android.provider.ContactsContract;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -48,6 +49,15 @@ public class Ch10Activity2 extends AppCompatActivity {
             }else{
                 Toast.makeText(this,"cancel",Toast.LENGTH_SHORT).show();
             }
+        }else if(requestCode==102){
+            //从联系人列表返回结果
+            if(resultCode==RESULT_OK){
+                //的带联系人信息(联系人的编号，lookup uri)
+                String content=data.getDataString();
+                Toast.makeText(this,content,Toast.LENGTH_SHORT).show();
+            }else{
+                Toast.makeText(this,"cancel",Toast.LENGTH_SHORT).show();
+            }
         }
     }
     public void web(View view){
@@ -55,5 +65,34 @@ public class Ch10Activity2 extends AppCompatActivity {
         Intent intent=new Intent(Intent.ACTION_VIEW, Uri.parse("http://baidu.com"));
    startActivity(intent);
     }
-
+    //查看通讯录列表
+public void contactsList(View view){
+    Intent intent=new Intent(Intent.ACTION_VIEW,Uri.parse("content://contacts/people/"));
+    startActivity(intent);
+}
+//查看联系人明细
+public void contactsDetail(View view){
+    Intent intent=new Intent(Intent.ACTION_EDIT);
+    intent.setData(Uri.parse("content://contacts/people/1"));
+    startActivity(intent);
+}
+public void showMap(View view){
+    Intent intent=new Intent(Intent.ACTION_VIEW,Uri.parse("geo:50.123,7.1434"));
+    startActivity(intent);
+}
+public void showPhoto(View view){
+    Intent intent=new Intent(Intent.ACTION_VIEW,Uri.parse("content://media/external/images/media"));
+    startActivity(intent);
+}
+public void pickcontact(View view){
+    //以子activity的形式，打开联系人列表，用户选择联系人后选择结果
+    Intent intent=new Intent(Intent.ACTION_PICK);//隐式启动
+    intent.setData(ContactsContract.Contacts.CONTENT_URI);
+    startActivityForResult(intent,102);
+}
+public void implicitStart(View view){
+    Intent intent=new Intent("com.inspur.action2");
+    intent.setData(Uri.parse("abc://com.ispur"));
+    startActivity(intent);
+}
 }
