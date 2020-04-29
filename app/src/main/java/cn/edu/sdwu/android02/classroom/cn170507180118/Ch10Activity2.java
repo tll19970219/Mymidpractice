@@ -1,4 +1,4 @@
-package cn.edu.sdwu.android02.classroom.sn170507180118;
+package cn.edu.sdwu.android02.classroom.cn170507180118;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -8,8 +8,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
-
-import static cn.edu.sdwu.android02.classroom.sn170507180118.R.id.text;
 
 public class Ch10Activity2 extends AppCompatActivity {
 

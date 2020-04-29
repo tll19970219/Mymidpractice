@@ -1,4 +1,4 @@
-package cn.edu.sdwu.android02.classroom.sn170507180118;
+package cn.edu.sdwu.android02.classroom.cn170507180118;
 
 import android.Manifest;
 import android.content.SharedPreferences;
@@ -16,9 +16,7 @@ import android.widget.Toast;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
-import java.io.IOException;
 import java.io.InputStream;
 
 

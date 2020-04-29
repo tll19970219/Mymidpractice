@@ -1,14 +1,11 @@
-package cn.edu.sdwu.android02.classroom.sn170507180118;
+package cn.edu.sdwu.android02.classroom.cn170507180118;
 
 import android.app.Service;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Binder;
 import android.os.IBinder;
-import android.support.annotation.IntDef;
 import android.util.Log;
-
-import java.io.IOException;
 
 public class MediaService extends Service {
     private MediaPlayer mediaPlayer;
