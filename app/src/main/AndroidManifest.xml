@@ -13,8 +13,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="cn.edu.sdwu.android02.classroom.cn170507180118.MainActivity" />
-        <activity android:name="cn.edu.sdwu.android02.classroom.cn170507180118.Ch10Activity1">
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Ch10Activity1">
             <intent-filter>
                 <action android:name="com.inspur.action2" />
 
@@ -25,10 +25,10 @@
                     android:scheme="abc" />
             </intent-filter>
         </activity>
-        <activity android:name="cn.edu.sdwu.android02.classroom.cn170507180118.Ch10Activity2" />
+        <activity android:name=".Ch10Activity2" />
 
         <receiver
-            android:name="cn.edu.sdwu.android02.classroom.cn170507180118.MyReceiver"
+            android:name=".MyReceiver"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
@@ -36,29 +36,39 @@
             </intent-filter>
         </receiver>
 
-        <activity android:name="cn.edu.sdwu.android02.classroom.cn170507180118.Ch10Activity3" />
+        <activity android:name=".Ch10Activity3" />
 
         <service
-            android:name="cn.edu.sdwu.android02.classroom.cn170507180118.MyService"
+            android:name=".MyService"
             android:enabled="true"
             android:exported="true" />
 
-        <activity android:name="cn.edu.sdwu.android02.classroom.cn170507180118.Ch12Activity1" />
+        <activity android:name=".Ch12Activity1" />
 
         <service
-            android:name="cn.edu.sdwu.android02.classroom.cn170507180118.MyService2"
+            android:name=".MyService2"
             android:enabled="true"
             android:exported="true" />
         <service
-            android:name="cn.edu.sdwu.android02.classroom.cn170507180118.MediaService"
+            android:name=".MediaService"
             android:enabled="true"
             android:exported="true" />
 
-        <activity android:name="cn.edu.sdwu.android02.classroom.cn170507180118.Ch12Activity2"></activity>
-        <activity android:name="cn.edu.sdwu.android02.classroom.cn170507180118.Ch13Activity1">
+        <activity android:name=".Ch12Activity2" />
+        <activity android:name=".Ch13Activity1" >
 
         </activity>
-        <activity android:name="cn.edu.sdwu.android02.classroom.cn170507180118.Ch14Activity1">
+        <activity android:name=".Ch14Activity1">
+
+        </activity>
+
+        <provider
+            android:name=".MyContentProvider"
+            android:authorities="com.inspur.android02"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".Ch15Activity1">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
