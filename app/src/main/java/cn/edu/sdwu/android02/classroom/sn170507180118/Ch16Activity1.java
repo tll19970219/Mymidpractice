@@ -1,17 +1,15 @@
-package cn.edu.sdwu.android02.classroom.cn170507180118;
+package cn.edu.sdwu.android02.classroom.sn170507180118;
 
 import android.Manifest;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.content.pm.PackageManager;
 import android.graphics.SurfaceTexture;
-import android.hardware.camera2.CameraAccessException;
 import android.hardware.camera2.CameraCaptureSession;
 import android.hardware.camera2.CameraDevice;
 import android.hardware.camera2.CameraManager;
 import android.hardware.camera2.CaptureRequest;
 import android.net.Uri;
-import android.os.Binder;
 import android.os.Build;
 import android.support.annotation.IntDef;
 import android.support.annotation.NonNull;

@@ -1,4 +1,4 @@
-package cn.edu.sdwu.android02.classroom.cn170507180118;
+package cn.edu.sdwu.android02.classroom.sn170507180118;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
